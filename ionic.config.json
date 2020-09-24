@@ -1,0 +1,7 @@
+{
+  "name": "lios",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

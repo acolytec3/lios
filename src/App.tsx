@@ -106,6 +106,9 @@ const App: React.FC = () => {
   const [toastColor, setColor] = React.useState('')
   const startup = async () => {
     setConnecting(true)
+    if (node) {
+      await node.stop()
+    }
     let nodeId: any = await PeerID.createFromJSON(id)
     options.peerId = nodeId
     node = await libp2p.create(options)
@@ -161,16 +164,16 @@ const App: React.FC = () => {
       <IonReactRouter>
         <IonTabs>
             <IonRouterOutlet>
-              <Route path="/peers" component={PeerList} exact={true} />
-              <Route path="/messages" component={Messages} exact={true} />
-              <Route exact path="/" render={() => <Redirect to="/peers" />} />
+              <Route path="/lios/peers" component={PeerList} exact={true} />
+              <Route path="/lios/messages" component={Messages} exact={true} />
+              <Route exact path="/" render={() => <Redirect to="/lios/peers" />} />
             </IonRouterOutlet>
             <IonTabBar slot="bottom">
-              <IonTabButton tab="tab1" href="/peers">
+              <IonTabButton tab="tab1" href="/lios/peers">
                 <BiNetworkChart />
                 <IonLabel>Peers</IonLabel>
               </IonTabButton>
-              <IonTabButton tab="tab2" href="/messages">
+              <IonTabButton tab="tab2" href="/lios/messages">
                 <TiMessages />
                 <IonLabel>Messages</IonLabel>
               </IonTabButton>

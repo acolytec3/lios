@@ -1,6 +1,6 @@
 {
-  "short_name": "Ionic App",
-  "name": "My Ionic App",
+  "short_name": "Lios",
+  "name": "Libp2p for all the OSes",
   "icons": [
     {
       "src": "assets/icon/favicon.png",

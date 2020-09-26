@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5c781cec6605978a8196935d8b4e52b1",
+    "revision": "4b31a412c7656a71fb92f7ec5c87f8b7",
     "url": "/lios/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lios/static/css/4.8921c4c4.chunk.css"
   },
   {
-    "revision": "0bfd2d9b98671b0f3405",
+    "revision": "bae788cf31b9ddb1d274",
     "url": "/lios/static/css/main.9a0cfab0.chunk.css"
   },
   {
@@ -252,8 +252,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lios/static/js/9.a5d31602.chunk.js"
   },
   {
-    "revision": "0bfd2d9b98671b0f3405",
-    "url": "/lios/static/js/main.5d2b06f9.chunk.js"
+    "revision": "bae788cf31b9ddb1d274",
+    "url": "/lios/static/js/main.45d552a4.chunk.js"
   },
   {
     "revision": "3afcf0710b8a90b99061",
